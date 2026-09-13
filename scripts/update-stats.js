@@ -1,13 +1,10 @@
 const fs = require("fs");
 
-const SCOREBOARD_URL =
-  "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?limit=50";
+const SEASON = 2026;
+const STATS_URL =
+  `https://github.com/nflverse/nflverse-data/releases/download/player_stats/stats_player_week_${SEASON}.csv`;
 
-function sleep(milliseconds) {
-  return new Promise((resolve) => setTimeout(resolve, milliseconds));
-}
-
-async function getJson(url) {
+async function getCsv(url) {
   const response = await fetch(url, {
     headers: {
       "User-Agent": "Putz-Football-League personal tracker"
@@ -15,61 +12,65 @@ async function getJson(url) {
   });
 
   if (!response.ok) {
-    throw new Error(`Request failed: ${response.status} ${url}`);
+    throw new Error(`Could not download player stats: ${response.status}`);
   }
 
-  return response.json();
+  return response.text();
 }
 
-function displayStatus(event) {
-  const status = event.status?.type;
+function parseCsv(text) {
+  const lines = text.trim().split(/\r?\n/);
 
-  if (!status) {
-    return "No game status";
+  if (!lines.length) {
+    return [];
   }
 
-  if (status.completed) {
-    return "Final";
-  }
+  const headers = splitCsvLine(lines[0]);
 
-  if (status.state === "pre") {
-    return `Scheduled: ${status.detail || ""}`.trim();
-  }
+  return lines.slice(1).map((line) => {
+    const values = splitCsvLine(line);
+    const record = {};
 
-  return status.detail || "In progress";
+    headers.forEach((header, index) => {
+      record[header] = values[index] ?? "";
+    });
+
+    return record;
+  });
 }
 
-function findTeamGame(events, nflTeam) {
-  for (const event of events) {
-    const competition = event.competitions?.[0];
+function splitCsvLine(line) {
+  const values = [];
+  let value = "";
+  let inQuotes = false;
 
-    if (!competition) {
+  for (let index = 0; index < line.length; index += 1) {
+    const character = line[index];
+    const nextCharacter = line[index + 1];
+
+    if (character === '"' && inQuotes && nextCharacter === '"') {
+      value += '"';
+      index += 1;
       continue;
     }
 
-    const competitors = competition.competitors || [];
-    const teamMatch = competitors.find(
-      (competitor) => competitor.team?.abbreviation === nflTeam
-    );
-
-    if (teamMatch) {
-      const opponent = competitors.find(
-        (competitor) => competitor.team?.abbreviation !== nflTeam
-      );
-
-      return {
-        eventId: event.id,
-        opponent: opponent?.team?.abbreviation || "—",
-        gameStatus: displayStatus(event)
-      };
+    if (character === '"') {
+      inQuotes = !inQuotes;
+      continue;
     }
+
+    if (character === "," && !inQuotes) {
+      values.push(value);
+      value = "";
+      continue;
+    }
+
+    value += character;
   }
 
-  return {
-    eventId: null,
-    opponent: "—",
-    gameStatus: "No game scheduled"
-  };
+  values.push(value);
+
+  return values;
 }
 
 function normalizeName(name = "") {
@@ -78,138 +79,123 @@ function normalizeName(name = "") {
     .replace(/[^a-z0-9]/g, "");
 }
 
-function numberAt(stats, index) {
-  const value = stats?.[index];
-  return value === undefined || value === null || value === ""
-    ? "0"
-    : String(value);
-}
-
-function addStat(stats, label, value) {
-  if (value && value !== "0" && value !== "0-0") {
-    stats.push(`${label} ${value}`);
-  }
-}
-
-function statLineForPlayer(player, categoryMap) {
-  const passing = categoryMap.passing?.get(player.matchKey);
-  const rushing = categoryMap.rushing?.get(player.matchKey);
-  const receiving = categoryMap.receiving?.get(player.matchKey);
-  const defensive = categoryMap.defensive?.get(player.matchKey);
-
-  const parts = [];
-
-  if (passing) {
-    const completions = numberAt(passing, 0);
-    const attempts = numberAt(passing, 1);
-    const yards = numberAt(passing, 3);
-    const touchdowns = numberAt(passing, 5);
-    const interceptions = numberAt(passing, 6);
-    const sacks = numberAt(passing, 7);
-
-    parts.push(
-      `${completions}/${attempts} pass, ${yards} yds, ${touchdowns} TD, ${interceptions} INT, ${sacks} sacks`
-    );
-  }
-
-  if (rushing) {
-    const carries = numberAt(rushing, 0);
-    const yards = numberAt(rushing, 1);
-    const touchdowns = numberAt(rushing, 3);
-
-    parts.push(`${carries} rush, ${yards} yds, ${touchdowns} TD`);
-  }
-
-  if (receiving) {
-    const receptions = numberAt(receiving, 0);
-    const yards = numberAt(receiving, 1);
-    const touchdowns = numberAt(receiving, 3);
-    const targets = numberAt(receiving, 4);
-
-    let line = `${receptions} rec, ${yards} yds, ${touchdowns} TD`;
-
-    if (targets !== "0") {
-      line += `, ${targets} tgt`;
-    }
-
-    parts.push(line);
-  }
-
-  if (defensive) {
-    const totalTackles = numberAt(defensive, 0);
-    const soloTackles = numberAt(defensive, 1);
-    const sacks = numberAt(defensive, 3);
-    const interceptions = numberAt(defensive, 4);
-    const passesDefended = numberAt(defensive, 5);
-    const forcedFumbles = numberAt(defensive, 6);
-
-    parts.push(
-      `${totalTackles} tackles (${soloTackles} solo), ${sacks} sacks, ` +
-      `${interceptions} INT, ${passesDefended} PD, ${forcedFumbles} FF`
-    );
-  }
-
-  return parts.length ? parts.join("; ") : "No box-score stats recorded";
-}
-
-function addCategoryPlayers(categoryMap, categoryName, category) {
-  const athletes = category?.athletes || [];
-
-  for (const teamBlock of athletes) {
-    for (const athlete of teamBlock.athletes || []) {
-      const athleteName =
-        athlete.athlete?.displayName ||
-        athlete.athlete?.fullName ||
-        athlete.athlete?.shortName ||
-        "";
-
-      const key = normalizeName(athleteName);
-
-      if (!key) {
-        continue;
-      }
-
-      categoryMap[categoryName].set(key, athlete.stats || []);
-    }
-  }
-}
-
-function parseBoxscore(summary) {
-  const categoryMap = {
-    passing: new Map(),
-    rushing: new Map(),
-    receiving: new Map(),
-    defensive: new Map()
+function normalizeTeam(team = "") {
+  const map = {
+    JAC: "JAX",
+    LA: "LAR",
+    LV: "LV",
+    GB: "GB",
+    NE: "NE",
+    NO: "NO",
+    SF: "SF",
+    TB: "TB"
   };
 
-  const players = summary.boxscore?.players || [];
+  return map[String(team).toUpperCase()] || String(team).toUpperCase();
+}
 
-  for (const team of players) {
-    for (const category of team.statistics || []) {
-      const categoryName = String(category.name || "").toLowerCase();
+function asNumber(value) {
+  const number = Number(value);
+  return Number.isFinite(number) ? number : 0;
+}
 
-      if (categoryName === "passing") {
-        addCategoryPlayers(categoryMap, "passing", category);
-      }
+function shown(value) {
+  return Number.isInteger(value)
+    ? String(value)
+    : value.toFixed(1).replace(/\.0$/, "");
+}
 
-      if (categoryName === "rushing") {
-        addCategoryPlayers(categoryMap, "rushing", category);
-      }
+function joinParts(parts) {
+  return parts.filter(Boolean).join(", ");
+}
 
-      if (categoryName === "receiving") {
-        addCategoryPlayers(categoryMap, "receiving", category);
-      }
+function statLine(player, stat) {
+  const position = player.position;
 
-      if (
-        categoryName === "defensive" ||
-        categoryName === "defense"
-      ) {
-        addCategoryPlayers(categoryMap, "defensive", category);
+  const passComp = asNumber(stat.completions);
+  const passAtt = asNumber(stat.attempts);
+  const passYds = asNumber(stat.passing_yards);
+  const passTd = asNumber(stat.passing_tds);
+  const passInt = asNumber(stat.interceptions);
+
+  const rushAtt = asNumber(stat.carries);
+  const rushYds = asNumber(stat.rushing_yards);
+  const rushTd = asNumber(stat.rushing_tds);
+
+  const rec = asNumber(stat.receptions);
+  const recYds = asNumber(stat.receiving_yards);
+  const recTd = asNumber(stat.receiving_tds);
+  const targets = asNumber(stat.targets);
+
+  const tackles = asNumber(stat.def_tackles);
+  const solo = asNumber(stat.def_tackles_solo);
+  const assists = asNumber(stat.def_tackles_with_assist);
+  const sacks = asNumber(stat.def_sacks);
+  const tfl = asNumber(stat.def_tackles_for_loss);
+  const interceptions = asNumber(stat.def_interceptions);
+  const passesDefended = asNumber(stat.def_pass_defended);
+  const forcedFumbles = asNumber(stat.def_forced_fumbles);
+  const fumbleRecoveries = asNumber(stat.def_fumbles_recovered);
+  const defensiveTds = asNumber(stat.def_tds);
+
+  const offense = [];
+  const defense = [];
+
+  if (position === "QB") {
+    offense.push(
+      `${shown(passComp)}/${shown(passAtt)} pass`,
+      `${shown(passYds)} yds`,
+      `${shown(passTd)} TD`,
+      `${shown(passInt)} INT`
+    );
+
+    if (rushAtt || rushYds || rushTd) {
+      offense.push(
+        `${shown(rushAtt)} rush`,
+        `${shown(rushYds)} rush yds`,
+        `${shown(rushTd)} rush TD`
+      );
+    }
+  } else if (["RB", "WR", "TE"].includes(position)) {
+    if (rushAtt || rushYds || rushTd) {
+      offense.push(
+        `${shown(rushAtt)} rush`,
+        `${shown(rushYds)} rush yds`,
+        `${shown(rushTd)} rush TD`
+      );
+    }
+
+    if (rec || recYds || recTd || targets) {
+      offense.push(
+        `${shown(rec)} rec`,
+        `${shown(recYds)} rec yds`,
+        `${shown(recTd)} rec TD`
+      );
+
+      if (targets) {
+        offense.push(`${shown(targets)} tgt`);
       }
     }
   }
 
-  return categoryMap;
+  if (["DT", "DE", "DL", "ILB", "OLB", "DE-LB", "CB", "S"].includes(position)) {
+    defense.push(
+      `${shown(tackles)} tackles`,
+      `(${shown(solo)} solo, ${shown(assists)} ast)`,
+      `${shown(sacks)} sacks`,
+      `${shown(tfl)} TFL`
+    );
+
+    if (interceptions) defense.push(`${shown(interceptions)} INT`);
+    if (passesDefended) defense.push(`${shown(passesDefended)} PD`);
+    if (forcedFumbles) defense.push(`${shown(forcedFumbles)} FF`);
+    if (fumbleRecoveries) defense.push(`${shown(fumbleRecoveries)} FR`);
+    if (defensiveTds) defense.push(`${shown(defensiveTds)} DEF TD`);
+  }
+
+  const line = joinParts([...offense, ...defense]);
+
+  return line || "No recorded stats";
 }
 
 async function main() {
@@ -218,33 +204,35 @@ async function main() {
   );
 
   const roster = rosterData.players || [];
-  const scoreboard = await getJson(SCOREBOARD_URL);
-  const events = scoreboard.events || [];
+  const csvText = await getCsv(STATS_URL);
+  const weeklyStats = parseCsv(csvText);
 
-  const gamesByTeam = {};
+  const statsByPlayer = new Map();
 
-  for (const player of roster) {
-    if (!gamesByTeam[player.team]) {
-      gamesByTeam[player.team] = findTeamGame(events, player.team);
+  for (const stat of weeklyStats) {
+    const name =
+      stat.player_name ||
+      stat.display_name ||
+      stat.player_display_name ||
+      "";
+
+    const team =
+      stat.recent_team ||
+      stat.team ||
+      stat.posteam ||
+      "";
+
+    const key = `${normalizeName(name)}|${normalizeTeam(team)}`;
+
+    if (key !== "|") {
+      statsByPlayer.set(key, stat);
     }
   }
 
-  const boxscoresByEvent = {};
-
-  for (const game of Object.values(gamesByTeam)) {
-    if (!game.eventId || boxscoresByEvent[game.eventId]) {
-      continue;
-    }
-
-    const summaryUrl =
-      "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=" +
-      game.eventId;
-
-    const summary = await getJson(summaryUrl);
-    boxscoresByEvent[game.eventId] = parseBoxscore(summary);
-
-    await sleep(250);
-  }
+  const latestWeek = weeklyStats.reduce((maxWeek, stat) => {
+    const week = asNumber(stat.week);
+    return Math.max(maxWeek, week);
+  }, 0);
 
   const now = new Date().toLocaleString("en-US", {
     timeZone: "America/New_York",
@@ -256,32 +244,25 @@ async function main() {
     league: rosterData.league || "Putz Football League",
     teamName: rosterData.teamName || "Boston Bastards",
     lastUpdated: `${now} ET`,
-    season: scoreboard.season?.year || 2026,
-    week: scoreboard.week?.number || "—",
+    season: SEASON,
+    week: latestWeek || "—",
+    source: "nflverse weekly player stats",
     players: roster.map((player) => {
-      const game = gamesByTeam[player.team];
-      const categoryMap = game.eventId
-        ? boxscoresByEvent[game.eventId]
-        : null;
+      const key =
+        `${normalizeName(player.name)}|${normalizeTeam(player.team)}`;
 
-      const rosterPlayer = {
+      const stat = statsByPlayer.get(key);
+
+      return {
         slot: player.slot,
         name: player.name,
         position: player.position,
         team: player.team,
-        opponent: game.opponent,
-        gameStatus: game.gameStatus,
-        eventId: game.eventId
-      };
-
-      const matchKey = normalizeName(player.name);
-
-      return {
-        ...rosterPlayer,
-        matchKey,
-        statLine: categoryMap
-          ? statLineForPlayer({ ...rosterPlayer, matchKey }, categoryMap)
-          : "No game scheduled"
+        opponent: stat?.opponent_team || stat?.defteam || "—",
+        gameStatus: stat
+          ? `Week ${stat.week || latestWeek} final stats`
+          : "No current-week stats found",
+        statLine: stat ? statLine(player, stat) : "No recorded stats"
       };
     })
   };
