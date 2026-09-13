@@ -25,10 +25,16 @@ async function main() {
     );
   }
 
-  const url =
+  const rosterData = JSON.parse(
+    fs.readFileSync("data/roster.json", "utf8")
+  );
+
+  const roster = rosterData.players || [];
+
+  const teamsUrl =
     "https://api.sportsdata.io/v3/nfl/scores/json/Teams";
 
-  const teams = await getJson(url);
+  const teams = await getJson(teamsUrl);
 
   const now = new Date().toLocaleString("en-US", {
     timeZone: "America/New_York",
@@ -37,14 +43,22 @@ async function main() {
   });
 
   const output = {
-    league: "Putz Football League",
-    teamName: "Boston Bastards",
+    league: rosterData.league || "Putz Football League",
+    teamName: rosterData.teamName || "Boston Bastards",
     lastUpdated: `${now} ET`,
-    source: "SportsDataIO connection test",
+    source: "SportsDataIO connection verified",
     connectionStatus: "Success",
     message:
-      `SportsDataIO responded successfully. Team records received: ${teams.length}.`,
-    players: []
+      `SportsDataIO connected successfully. Team records received: ${teams.length}.`,
+    players: roster.map((player) => ({
+      slot: player.slot,
+      name: player.name,
+      position: player.position,
+      team: player.team,
+      opponent: "—",
+      gameStatus: "SportsDataIO connected",
+      statLine: "Player-stat mapping is the next step"
+    }))
   };
 
   fs.writeFileSync(
