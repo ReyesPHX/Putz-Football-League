@@ -1,7 +1,7 @@
 {
   "league": "Putz Football League",
   "teamName": "Boston Bastards",
-  "lastUpdated": "Sep 13, 2026, 4:02 PM ET",
+  "lastUpdated": "Sep 13, 2026, 4:22 PM ET",
   "season": 2026,
   "week": 1,
   "players": [
@@ -10,351 +10,390 @@
       "name": "Drake Maye",
       "position": "QB",
       "team": "NE",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "SEA",
+      "gameStatus": "Final",
+      "eventId": "401872656",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "QB-2",
       "name": "Lamar Jackson",
       "position": "QB",
       "team": "BAL",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "IND",
+      "gameStatus": "Final",
+      "eventId": "401872659",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "QB-3",
       "name": "Joe Burrow",
       "position": "QB",
       "team": "CIN",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "TB",
+      "gameStatus": "Final",
+      "eventId": "401872925",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "RB-1",
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "SF",
+      "gameStatus": "Final",
+      "eventId": "401872657",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "RB-2",
       "name": "Josh Jacobs",
       "position": "RB",
       "team": "GB",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "MIN",
+      "gameStatus": "Scheduled: Sun, September 13th at 4:25 PM EDT",
+      "eventId": "401872927",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "RB-3",
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "CLE",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "JAX",
+      "gameStatus": "Final",
+      "eventId": "401872922",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "RB-4",
       "name": "TreVeyon Henderson",
       "position": "RB",
       "team": "NE",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "SEA",
+      "gameStatus": "Final",
+      "eventId": "401872656",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "WR-1",
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "CIN",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "TB",
+      "gameStatus": "Final",
+      "eventId": "401872925",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "WR-2",
       "name": "A.J. Brown",
       "position": "WR",
       "team": "PHI",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "WSH",
+      "gameStatus": "Scheduled: Sun, September 13th at 4:25 PM EDT",
+      "eventId": "401872929",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "WR-3",
       "name": "DJ Moore",
       "position": "WR",
       "team": "CHI",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "CAR",
+      "gameStatus": "3:55 - 4th Quarter",
+      "eventId": "401872661",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "WR-4",
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "TEN",
+      "gameStatus": "Final",
+      "eventId": "401872924",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "WR-5",
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "MIN",
+      "gameStatus": "Scheduled: Sun, September 13th at 4:25 PM EDT",
+      "eventId": "401872927",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "WR-6",
       "name": "Travis Hunter",
       "position": "WR",
       "team": "JAX",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "CLE",
+      "gameStatus": "Final",
+      "eventId": "401872922",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "TE-1",
       "name": "George Kittle",
       "position": "TE",
       "team": "SF",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "LAR",
+      "gameStatus": "Final",
+      "eventId": "401872657",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "TE-2",
       "name": "Pat Freiermuth",
       "position": "TE",
       "team": "PIT",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "ATL",
+      "gameStatus": "Final",
+      "eventId": "401872658",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "TE-3",
       "name": "Isaiah Likely",
       "position": "TE",
       "team": "BAL",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "IND",
+      "gameStatus": "Final",
+      "eventId": "401872659",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "TE-4",
       "name": "Tommy Tremble",
       "position": "TE",
       "team": "CAR",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "CHI",
+      "gameStatus": "3:55 - 4th Quarter",
+      "eventId": "401872661",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "DT-1",
       "name": "Mason Graham",
       "position": "DT",
       "team": "CLE",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "JAX",
+      "gameStatus": "Final",
+      "eventId": "401872922",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "DE-1",
       "name": "Aidan Hutchinson",
       "position": "DE",
       "team": "DET",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "NO",
+      "gameStatus": "End of 4th Quarter",
+      "eventId": "401872923",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "DL-1",
       "name": "Moro Ojomo",
       "position": "DL",
       "team": "PHI",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "WSH",
+      "gameStatus": "Scheduled: Sun, September 13th at 4:25 PM EDT",
+      "eventId": "401872929",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "DL-2",
       "name": "DeForest Buckner",
       "position": "DL",
       "team": "IND",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "BAL",
+      "gameStatus": "Final",
+      "eventId": "401872659",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "DL-3",
       "name": "Milton Williams",
       "position": "DL",
       "team": "NE",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "SEA",
+      "gameStatus": "Final",
+      "eventId": "401872656",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "DL-4",
       "name": "Osa Odighizuwa",
       "position": "DL",
       "team": "DAL",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "NYG",
+      "gameStatus": "Scheduled: Sun, September 13th at 8:20 PM EDT",
+      "eventId": "401872930",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "ILB-1",
       "name": "Carson Schwesinger",
       "position": "ILB",
       "team": "CLE",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "JAX",
+      "gameStatus": "Final",
+      "eventId": "401872922",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "ILB-2",
       "name": "Roquan Smith",
       "position": "ILB",
       "team": "BAL",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "IND",
+      "gameStatus": "Final",
+      "eventId": "401872659",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "OLB-1",
       "name": "Leo Chenal",
       "position": "OLB",
       "team": "KC",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "DEN",
+      "gameStatus": "Scheduled: Mon, September 14th at 8:15 PM EDT",
+      "eventId": "401872931",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "OLB-2",
       "name": "Edgerrin Cooper",
       "position": "OLB",
       "team": "GB",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "MIN",
+      "gameStatus": "Scheduled: Sun, September 13th at 4:25 PM EDT",
+      "eventId": "401872927",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "DE-LB-1",
       "name": "Chase Young",
       "position": "DE-LB",
       "team": "NO",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "DET",
+      "gameStatus": "End of 4th Quarter",
+      "eventId": "401872923",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "DE-LB-2",
       "name": "Chop Robinson",
       "position": "DE-LB",
       "team": "MIA",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "LV",
+      "gameStatus": "Scheduled: Sun, September 13th at 4:25 PM EDT",
+      "eventId": "401872928",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "CB-1",
       "name": "Devon Witherspoon",
       "position": "CB",
       "team": "SEA",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "NE",
+      "gameStatus": "Final",
+      "eventId": "401872656",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "CB-2",
       "name": "Kamari Lassiter",
       "position": "CB",
       "team": "HOU",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "BUF",
+      "gameStatus": "Final",
+      "eventId": "401872660",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "CB-3",
       "name": "Jarrian Jones",
       "position": "CB",
       "team": "JAX",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "CLE",
+      "gameStatus": "Final",
+      "eventId": "401872922",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "CB-4",
       "name": "Carlton Davis",
       "position": "CB",
       "team": "NE",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "SEA",
+      "gameStatus": "Final",
+      "eventId": "401872656",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "CB-5",
       "name": "Travis Hunter",
       "position": "CB",
       "team": "JAX",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "CLE",
+      "gameStatus": "Final",
+      "eventId": "401872922",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "CB-6",
       "name": "Azareye'h Thomas",
       "position": "CB",
       "team": "CAR",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "CHI",
+      "gameStatus": "3:55 - 4th Quarter",
+      "eventId": "401872661",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "S-1",
       "name": "Minkah Fitzpatrick",
       "position": "S",
       "team": "MIA",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "LV",
+      "gameStatus": "Scheduled: Sun, September 13th at 4:25 PM EDT",
+      "eventId": "401872928",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "S-2",
       "name": "Kamren Kinchens",
       "position": "S",
       "team": "LAR",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "SF",
+      "gameStatus": "Final",
+      "eventId": "401872657",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "S-3",
       "name": "Brian Branch",
       "position": "S",
       "team": "DET",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "NO",
+      "gameStatus": "End of 4th Quarter",
+      "eventId": "401872923",
+      "statLine": "Player box-score stats will be added next"
     },
     {
       "slot": "S-4",
       "name": "Jevon Holland",
       "position": "S",
       "team": "NYG",
-      "opponent": "—",
-      "gameStatus": "Data provider not connected",
-      "statLine": "No game stats yet"
+      "opponent": "DAL",
+      "gameStatus": "Scheduled: Sun, September 13th at 8:20 PM EDT",
+      "eventId": "401872930",
+      "statLine": "Player box-score stats will be added next"
     }
   ]
 }
