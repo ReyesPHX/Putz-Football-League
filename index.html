@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Putz Football League Player Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Putz Football League Player Tracker</h1>
+      <p id="subtitle">Loading latest player data…</p>
+    </header>
+
+    <section class="controls">
+      <label for="position-filter">Position</label>
+
+      <select id="position-filter">
+        <option value="ALL">All positions</option>
+        <option value="QB">QB</option>
+        <option value="RB">RB</option>
+        <option value="WR">WR</option>
+        <option value="TE">TE</option>
+        <option value="K">K</option>
+        <option value="DST">D/ST</option>
+        <option value="IDP">IDP</option>
+      </select>
+
+      <input
+        id="search"
+        type="search"
+        placeholder="Search player or team"
+      >
+    </section>
+
+    <section class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Pos.</th>
+            <th>Player</th>
+            <th>Team</th>
+            <th>Opponent</th>
+            <th>Status</th>
+            <th>Stats</th>
+          </tr>
+        </thead>
+
+        <tbody id="player-rows"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
