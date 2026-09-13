@@ -1,7 +1,7 @@
 {
   "league": "Putz Football League",
   "teamName": "Boston Bastards",
-  "lastUpdated": "Sep 13, 2026, 4:22 PM ET",
+  "lastUpdated": "Sep 13, 2026, 4:28 PM ET",
   "season": 2026,
   "week": 1,
   "players": [
@@ -13,7 +13,8 @@
       "opponent": "SEA",
       "gameStatus": "Final",
       "eventId": "401872656",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "drakemaye",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "QB-2",
@@ -23,7 +24,8 @@
       "opponent": "IND",
       "gameStatus": "Final",
       "eventId": "401872659",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "lamarjackson",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "QB-3",
@@ -33,7 +35,8 @@
       "opponent": "TB",
       "gameStatus": "Final",
       "eventId": "401872925",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "joeburrow",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "RB-1",
@@ -43,7 +46,8 @@
       "opponent": "SF",
       "gameStatus": "Final",
       "eventId": "401872657",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "kyrenwilliams",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "RB-2",
@@ -51,9 +55,10 @@
       "position": "RB",
       "team": "GB",
       "opponent": "MIN",
-      "gameStatus": "Scheduled: Sun, September 13th at 4:25 PM EDT",
+      "gameStatus": "14:14 - 1st Quarter",
       "eventId": "401872927",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "joshjacobs",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "RB-3",
@@ -63,7 +68,8 @@
       "opponent": "JAX",
       "gameStatus": "Final",
       "eventId": "401872922",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "quinshonjudkins",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "RB-4",
@@ -73,7 +79,8 @@
       "opponent": "SEA",
       "gameStatus": "Final",
       "eventId": "401872656",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "treveyonhenderson",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "WR-1",
@@ -83,7 +90,8 @@
       "opponent": "TB",
       "gameStatus": "Final",
       "eventId": "401872925",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "jamarrchase",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "WR-2",
@@ -91,9 +99,10 @@
       "position": "WR",
       "team": "PHI",
       "opponent": "WSH",
-      "gameStatus": "Scheduled: Sun, September 13th at 4:25 PM EDT",
+      "gameStatus": "13:28 - 1st Quarter",
       "eventId": "401872929",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "ajbrown",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "WR-3",
@@ -101,9 +110,10 @@
       "position": "WR",
       "team": "CHI",
       "opponent": "CAR",
-      "gameStatus": "3:55 - 4th Quarter",
+      "gameStatus": "3:40 - 4th Quarter",
       "eventId": "401872661",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "djmoore",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "WR-4",
@@ -113,7 +123,8 @@
       "opponent": "TEN",
       "gameStatus": "Final",
       "eventId": "401872924",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "garrettwilson",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "WR-5",
@@ -121,9 +132,10 @@
       "position": "WR",
       "team": "GB",
       "opponent": "MIN",
-      "gameStatus": "Scheduled: Sun, September 13th at 4:25 PM EDT",
+      "gameStatus": "14:14 - 1st Quarter",
       "eventId": "401872927",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "christianwatson",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "WR-6",
@@ -133,7 +145,8 @@
       "opponent": "CLE",
       "gameStatus": "Final",
       "eventId": "401872922",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "travishunter",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "TE-1",
@@ -143,7 +156,8 @@
       "opponent": "LAR",
       "gameStatus": "Final",
       "eventId": "401872657",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "georgekittle",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "TE-2",
@@ -153,7 +167,8 @@
       "opponent": "ATL",
       "gameStatus": "Final",
       "eventId": "401872658",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "patfreiermuth",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "TE-3",
@@ -163,7 +178,8 @@
       "opponent": "IND",
       "gameStatus": "Final",
       "eventId": "401872659",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "isaiahlikely",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "TE-4",
@@ -171,9 +187,10 @@
       "position": "TE",
       "team": "CAR",
       "opponent": "CHI",
-      "gameStatus": "3:55 - 4th Quarter",
+      "gameStatus": "3:40 - 4th Quarter",
       "eventId": "401872661",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "tommytremble",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "DT-1",
@@ -183,7 +200,8 @@
       "opponent": "JAX",
       "gameStatus": "Final",
       "eventId": "401872922",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "masongraham",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "DE-1",
@@ -191,9 +209,10 @@
       "position": "DE",
       "team": "DET",
       "opponent": "NO",
-      "gameStatus": "End of 4th Quarter",
+      "gameStatus": "7:28 - OT",
       "eventId": "401872923",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "aidanhutchinson",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "DL-1",
@@ -201,9 +220,10 @@
       "position": "DL",
       "team": "PHI",
       "opponent": "WSH",
-      "gameStatus": "Scheduled: Sun, September 13th at 4:25 PM EDT",
+      "gameStatus": "13:28 - 1st Quarter",
       "eventId": "401872929",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "moroojomo",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "DL-2",
@@ -213,7 +233,8 @@
       "opponent": "BAL",
       "gameStatus": "Final",
       "eventId": "401872659",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "deforestbuckner",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "DL-3",
@@ -223,7 +244,8 @@
       "opponent": "SEA",
       "gameStatus": "Final",
       "eventId": "401872656",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "miltonwilliams",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "DL-4",
@@ -233,7 +255,8 @@
       "opponent": "NYG",
       "gameStatus": "Scheduled: Sun, September 13th at 8:20 PM EDT",
       "eventId": "401872930",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "osaodighizuwa",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "ILB-1",
@@ -243,7 +266,8 @@
       "opponent": "JAX",
       "gameStatus": "Final",
       "eventId": "401872922",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "carsonschwesinger",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "ILB-2",
@@ -253,7 +277,8 @@
       "opponent": "IND",
       "gameStatus": "Final",
       "eventId": "401872659",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "roquansmith",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "OLB-1",
@@ -263,7 +288,8 @@
       "opponent": "DEN",
       "gameStatus": "Scheduled: Mon, September 14th at 8:15 PM EDT",
       "eventId": "401872931",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "leochenal",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "OLB-2",
@@ -271,9 +297,10 @@
       "position": "OLB",
       "team": "GB",
       "opponent": "MIN",
-      "gameStatus": "Scheduled: Sun, September 13th at 4:25 PM EDT",
+      "gameStatus": "14:14 - 1st Quarter",
       "eventId": "401872927",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "edgerrincooper",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "DE-LB-1",
@@ -281,9 +308,10 @@
       "position": "DE-LB",
       "team": "NO",
       "opponent": "DET",
-      "gameStatus": "End of 4th Quarter",
+      "gameStatus": "7:28 - OT",
       "eventId": "401872923",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "chaseyoung",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "DE-LB-2",
@@ -291,9 +319,10 @@
       "position": "DE-LB",
       "team": "MIA",
       "opponent": "LV",
-      "gameStatus": "Scheduled: Sun, September 13th at 4:25 PM EDT",
+      "gameStatus": "13:39 - 1st Quarter",
       "eventId": "401872928",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "choprobinson",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "CB-1",
@@ -303,7 +332,8 @@
       "opponent": "NE",
       "gameStatus": "Final",
       "eventId": "401872656",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "devonwitherspoon",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "CB-2",
@@ -313,7 +343,8 @@
       "opponent": "BUF",
       "gameStatus": "Final",
       "eventId": "401872660",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "kamarilassiter",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "CB-3",
@@ -323,7 +354,8 @@
       "opponent": "CLE",
       "gameStatus": "Final",
       "eventId": "401872922",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "jarrianjones",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "CB-4",
@@ -333,7 +365,8 @@
       "opponent": "SEA",
       "gameStatus": "Final",
       "eventId": "401872656",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "carltondavis",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "CB-5",
@@ -343,7 +376,8 @@
       "opponent": "CLE",
       "gameStatus": "Final",
       "eventId": "401872922",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "travishunter",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "CB-6",
@@ -351,9 +385,10 @@
       "position": "CB",
       "team": "CAR",
       "opponent": "CHI",
-      "gameStatus": "3:55 - 4th Quarter",
+      "gameStatus": "3:40 - 4th Quarter",
       "eventId": "401872661",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "azareyehthomas",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "S-1",
@@ -361,9 +396,10 @@
       "position": "S",
       "team": "MIA",
       "opponent": "LV",
-      "gameStatus": "Scheduled: Sun, September 13th at 4:25 PM EDT",
+      "gameStatus": "13:39 - 1st Quarter",
       "eventId": "401872928",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "minkahfitzpatrick",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "S-2",
@@ -373,7 +409,8 @@
       "opponent": "SF",
       "gameStatus": "Final",
       "eventId": "401872657",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "kamrenkinchens",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "S-3",
@@ -381,9 +418,10 @@
       "position": "S",
       "team": "DET",
       "opponent": "NO",
-      "gameStatus": "End of 4th Quarter",
+      "gameStatus": "7:28 - OT",
       "eventId": "401872923",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "brianbranch",
+      "statLine": "No box-score stats recorded"
     },
     {
       "slot": "S-4",
@@ -393,7 +431,8 @@
       "opponent": "DAL",
       "gameStatus": "Scheduled: Sun, September 13th at 8:20 PM EDT",
       "eventId": "401872930",
-      "statLine": "Player box-score stats will be added next"
+      "matchKey": "jevonholland",
+      "statLine": "No box-score stats recorded"
     }
   ]
 }
