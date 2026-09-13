@@ -1,9 +1,319 @@
-[
-  {
-    "name": "Example Quarterback",
-    "position": "QB",
-    "team": "BUF",
-    "providerPlayerId": "",
-    "active": true
-  }
-]
+{
+  "league": "Putz Football League",
+  "teamName": "Boston Bastards",
+  "owner": "",
+  "players": [
+    {
+      "slot": "QB-1",
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "QB-2",
+      "name": "Lamar Jackson",
+      "position": "QB",
+      "team": "BAL",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "QB-3",
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "CIN",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "RB-1",
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "RB-2",
+      "name": "Josh Jacobs",
+      "position": "RB",
+      "team": "GB",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "RB-3",
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "CLE",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "RB-4",
+      "name": "TreVeyon Henderson",
+      "position": "RB",
+      "team": "NE",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "WR-1",
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "CIN",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "WR-2",
+      "name": "A.J. Brown",
+      "position": "WR",
+      "team": "PHI",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "WR-3",
+      "name": "DJ Moore",
+      "position": "WR",
+      "team": "CHI",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "WR-4",
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "WR-5",
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "WR-6",
+      "name": "Travis Hunter",
+      "position": "WR",
+      "team": "JAX",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "TE-1",
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "TE-2",
+      "name": "Pat Freiermuth",
+      "position": "TE",
+      "team": "PIT",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "TE-3",
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "BAL",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "TE-4",
+      "name": "Tommy Tremble",
+      "position": "TE",
+      "team": "CAR",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "DT-1",
+      "name": "Mason Graham",
+      "position": "DT",
+      "team": "CLE",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "DE-1",
+      "name": "Aidan Hutchinson",
+      "position": "DE",
+      "team": "DET",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "DL-1",
+      "name": "Moro Ojomo",
+      "position": "DL",
+      "team": "PHI",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "DL-2",
+      "name": "DeForest Buckner",
+      "position": "DL",
+      "team": "IND",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "DL-3",
+      "name": "Milton Williams",
+      "position": "DL",
+      "team": "NE",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "DL-4",
+      "name": "Osa Odighizuwa",
+      "position": "DL",
+      "team": "DAL",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "ILB-1",
+      "name": "Carson Schwesinger",
+      "position": "ILB",
+      "team": "CLE",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "ILB-2",
+      "name": "Roquan Smith",
+      "position": "ILB",
+      "team": "BAL",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "OLB-1",
+      "name": "Leo Chenal",
+      "position": "OLB",
+      "team": "KC",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "OLB-2",
+      "name": "Edgerrin Cooper",
+      "position": "OLB",
+      "team": "GB",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "DE-LB-1",
+      "name": "Chase Young",
+      "position": "DE-LB",
+      "team": "NO",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "DE-LB-2",
+      "name": "Chop Robinson",
+      "position": "DE-LB",
+      "team": "MIA",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "CB-1",
+      "name": "Devon Witherspoon",
+      "position": "CB",
+      "team": "SEA",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "CB-2",
+      "name": "Kamari Lassiter",
+      "position": "CB",
+      "team": "HOU",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "CB-3",
+      "name": "Jarrian Jones",
+      "position": "CB",
+      "team": "JAX",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "CB-4",
+      "name": "Carlton Davis",
+      "position": "CB",
+      "team": "NE",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "CB-5",
+      "name": "Travis Hunter",
+      "position": "CB",
+      "team": "JAX",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "CB-6",
+      "name": "Azareye'h Thomas",
+      "position": "CB",
+      "team": "CAR",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "S-1",
+      "name": "Minkah Fitzpatrick",
+      "position": "S",
+      "team": "MIA",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "S-2",
+      "name": "Kamren Kinchens",
+      "position": "S",
+      "team": "LAR",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "S-3",
+      "name": "Brian Branch",
+      "position": "S",
+      "team": "DET",
+      "providerPlayerId": "",
+      "active": true
+    },
+    {
+      "slot": "S-4",
+      "name": "Jevon Holland",
+      "position": "S",
+      "team": "NYG",
+      "providerPlayerId": "",
+      "active": true
+    }
+  ]
+}
