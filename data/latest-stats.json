@@ -1,0 +1,15 @@
+{
+  "lastUpdated": "2026-09-13T19:37:07.230Z",
+  "season": 2026,
+  "week": 1,
+  "players": [
+    {
+      "name": "Example Quarterback",
+      "position": "QB",
+      "team": "BUF",
+      "opponent": "—",
+      "gameStatus": "Data provider not connected",
+      "statLine": "No game stats yet"
+    }
+  ]
+}
