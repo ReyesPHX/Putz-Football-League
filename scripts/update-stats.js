@@ -18,19 +18,20 @@ const output = {
   lastUpdated: `${now} ET`,
   season: 2026,
   week: 1,
-  players: roster.map((player) => ({
-    slot: player.slot,
-    name: player.name,
-    position: player.position,
-    team: player.team,
-    opponent: "—",
-    gameStatus: "Data provider not connected",
-    statLine: "No game stats yet"
-  }))
+  players: roster.map((player) => {
+    return {
+      slot: player.slot,
+      name: player.name,
+      position: player.position,
+      team: player.team,
+      opponent: "—",
+      gameStatus: "Data provider not connected",
+      statLine: "No game stats yet"
+    };
+  })
 };
 
 fs.writeFileSync(
   "data/latest-stats.json",
   JSON.stringify(output, null, 2) + "\n"
-);
 );
