@@ -1,9 +1,361 @@
 {
   "league": "Putz Football League",
   "teamName": "Boston Bastards",
-  "lastUpdated": "Sep 13, 2026, 5:10 PM ET",
-  "source": "SportsDataIO connection test",
+  "lastUpdated": "Sep 13, 2026, 5:13 PM ET",
+  "source": "SportsDataIO connection verified",
   "connectionStatus": "Success",
-  "message": "SportsDataIO responded successfully. Team records received: 32.",
-  "players": []
+  "message": "SportsDataIO connected successfully. Team records received: 32.",
+  "players": [
+    {
+      "slot": "QB-1",
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "QB-2",
+      "name": "Lamar Jackson",
+      "position": "QB",
+      "team": "BAL",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "QB-3",
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "CIN",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "RB-1",
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "RB-2",
+      "name": "Josh Jacobs",
+      "position": "RB",
+      "team": "GB",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "RB-3",
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "CLE",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "RB-4",
+      "name": "TreVeyon Henderson",
+      "position": "RB",
+      "team": "NE",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "WR-1",
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "CIN",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "WR-2",
+      "name": "A.J. Brown",
+      "position": "WR",
+      "team": "PHI",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "WR-3",
+      "name": "DJ Moore",
+      "position": "WR",
+      "team": "CHI",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "WR-4",
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "WR-5",
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "WR-6",
+      "name": "Travis Hunter",
+      "position": "WR",
+      "team": "JAX",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "TE-1",
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "TE-2",
+      "name": "Pat Freiermuth",
+      "position": "TE",
+      "team": "PIT",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "TE-3",
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "BAL",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "TE-4",
+      "name": "Tommy Tremble",
+      "position": "TE",
+      "team": "CAR",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "DT-1",
+      "name": "Mason Graham",
+      "position": "DT",
+      "team": "CLE",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "DE-1",
+      "name": "Aidan Hutchinson",
+      "position": "DE",
+      "team": "DET",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "DL-1",
+      "name": "Moro Ojomo",
+      "position": "DL",
+      "team": "PHI",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "DL-2",
+      "name": "DeForest Buckner",
+      "position": "DL",
+      "team": "IND",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "DL-3",
+      "name": "Milton Williams",
+      "position": "DL",
+      "team": "NE",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "DL-4",
+      "name": "Osa Odighizuwa",
+      "position": "DL",
+      "team": "DAL",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "ILB-1",
+      "name": "Carson Schwesinger",
+      "position": "ILB",
+      "team": "CLE",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "ILB-2",
+      "name": "Roquan Smith",
+      "position": "ILB",
+      "team": "BAL",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "OLB-1",
+      "name": "Leo Chenal",
+      "position": "OLB",
+      "team": "KC",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "OLB-2",
+      "name": "Edgerrin Cooper",
+      "position": "OLB",
+      "team": "GB",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "DE-LB-1",
+      "name": "Chase Young",
+      "position": "DE-LB",
+      "team": "NO",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "DE-LB-2",
+      "name": "Chop Robinson",
+      "position": "DE-LB",
+      "team": "MIA",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "CB-1",
+      "name": "Devon Witherspoon",
+      "position": "CB",
+      "team": "SEA",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "CB-2",
+      "name": "Kamari Lassiter",
+      "position": "CB",
+      "team": "HOU",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "CB-3",
+      "name": "Jarrian Jones",
+      "position": "CB",
+      "team": "JAX",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "CB-4",
+      "name": "Carlton Davis",
+      "position": "CB",
+      "team": "NE",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "CB-5",
+      "name": "Travis Hunter",
+      "position": "CB",
+      "team": "JAX",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "CB-6",
+      "name": "Azareye'h Thomas",
+      "position": "CB",
+      "team": "CAR",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "S-1",
+      "name": "Minkah Fitzpatrick",
+      "position": "S",
+      "team": "MIA",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "S-2",
+      "name": "Kamren Kinchens",
+      "position": "S",
+      "team": "LAR",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "S-3",
+      "name": "Brian Branch",
+      "position": "S",
+      "team": "DET",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    },
+    {
+      "slot": "S-4",
+      "name": "Jevon Holland",
+      "position": "S",
+      "team": "NYG",
+      "opponent": "—",
+      "gameStatus": "SportsDataIO connected",
+      "statLine": "Player-stat mapping is the next step"
+    }
+  ]
 }
