@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 20
 
-      name: Run update script
+      - name: Run update script
         env:
           SPORTS_DATA_IO_KEY: ${{ secrets.SPORTS_DATA_IO_KEY }}
         run: node scripts/update-stats.js
